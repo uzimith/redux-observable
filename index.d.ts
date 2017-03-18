@@ -29,7 +29,7 @@ export declare class ActionsObservable<T> extends Observable<T> {
 }
 
 export declare interface Epic<T, S> {
-  (action$: ActionsObservable<T>, store: MiddlewareAPI<S>): Observable<T>;
+  (action$: ActionsObservable<T>, store: MiddlewareAPI<S>): Observable<any>;
 }
 
 export interface EpicMiddleware<T, S> extends Middleware {
